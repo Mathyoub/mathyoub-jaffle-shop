@@ -2,7 +2,7 @@
 
 with source_data as (
 
-    select 21 as id
+    select {{ env_var('DBT_ONE') }} as id
     union all
     select null as id
 
