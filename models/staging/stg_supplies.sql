@@ -25,7 +25,6 @@ renamed as (
         perishable as is_perishable_supply
 
     from source
-    where id is not null
 
 )
 
