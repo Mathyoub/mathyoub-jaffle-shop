@@ -2,7 +2,7 @@
 
 with source_data as (
 
-    select 23 as id
+    select 24 as id
     union all
     select null as id
 
