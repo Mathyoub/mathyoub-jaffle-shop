@@ -17,7 +17,7 @@ renamed as (
         sku as product_id1,
 
         ---------- text
-        name as supply_name,
+        UPPER(name) as supply_name,
         name as supply_name1,
 
         ---------- numerics
