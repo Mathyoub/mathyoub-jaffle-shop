@@ -11,7 +11,7 @@ renamed as (
     select
 
         ----------  ids
-        --{{ dbt_utils.generate_surrogate_key(['id', 'sku']) }} as supply_uuid1,
+        {{ dbt_utils.generate_surrogate_key(['id', 'sku']) }} as supply_uuid1,
         id as supply_id,
         sku as product_id,
         sku as product_id1,
@@ -19,7 +19,7 @@ renamed as (
         ---------- text
         LOWER(name) as supply_name,
         name as supply_name1,
-        UPPER(name) as upper_name,
+        LOWER(name) as upper_name,
 
         ---------- numerics
         {{ cents_to_dollars('cost') }} as supply_cost,
