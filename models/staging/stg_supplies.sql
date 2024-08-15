@@ -14,9 +14,11 @@ renamed as (
         {{ dbt_utils.generate_surrogate_key(['id', 'sku']) }} as supply_uuid,
         id as supply_id,
         sku as product_id,
+        sku as product_id1,
 
         ---------- text
         name as supply_name,
+        name as supply_name1,
 
         ---------- numerics
         {{ cents_to_dollars('cost') }} as supply_cost,
