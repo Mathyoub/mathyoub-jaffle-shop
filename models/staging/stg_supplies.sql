@@ -19,12 +19,15 @@ renamed as (
         ---------- text
         LOWER(name) as supply_name,
         name as supply_name1,
+        UPPER(name) as upper_name,
 
         ---------- numerics
         {{ cents_to_dollars('cost') }} as supply_cost,
 
         ---------- booleans
-        perishable as is_perishable_supply
+        perishable as is_perishable_supply,
+
+        1 as id
 
     from source
     where id is not null
