@@ -2,9 +2,8 @@
 
 with source_data as (
 
-    select 24,25,26 as id
+    select 24 as id, 25 as dog, 26 as cat
     union all
-    select null as id
 
 )
 
