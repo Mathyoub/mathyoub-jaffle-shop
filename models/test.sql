@@ -2,8 +2,7 @@
 
 with source_data as (
 
-    select 245 as id,
-    select 222 as name
+    select 245 as id
     union all
 )
 
