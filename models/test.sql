@@ -4,6 +4,7 @@ with source_data as (
 
     select 245 as id
     union all
+    select null as id
 )
 
 select *
