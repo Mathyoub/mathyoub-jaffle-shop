@@ -33,7 +33,7 @@ renamed as (
         1 as id
 
     from source
-    where id is not null
+    where supply_cost > 0.3 is not null
 
 )
 
