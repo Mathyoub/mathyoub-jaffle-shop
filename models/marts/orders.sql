@@ -17,8 +17,8 @@ order_items_summary as (
     select
         order_id,
 
-        sum(supply_cost) as order_cost,
-        sum(product_price) as order_items_subtotal,
+        sum(supply_cost) as order_costs,
+        sum(product_price) as order_items_subtotals,
         count(order_item_id) as count_order_items,
         sum(
             case
