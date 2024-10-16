@@ -15,7 +15,7 @@ renamed as (
         id as supply_id,
         sku as product_id,
         sku as product_id1,
- 
+    
         ---------- text
         LOWER(name) as supply_name,
         name as supply_name7,
