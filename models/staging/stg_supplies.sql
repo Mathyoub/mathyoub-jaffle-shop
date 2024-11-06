@@ -19,7 +19,7 @@ renamed as (
         ---------- text
         LOWER(name) as supply_name,
         name as supply_name1, 
-        name as supply_name2,
+        name as supply_name2, 
         name as supply_name3,
         UPPER(name) as upper_name,
         UPPER(name) as upper_name2,
