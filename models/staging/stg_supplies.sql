@@ -21,8 +21,8 @@ renamed as (
         name as supply_name1,
         name as supply_name2,
         name as supply_name3,
-        LOWER(name) as upper_name,
-        --UPPER(name) as upper_name2,
+        UPPER(name) as upper_name,
+        UPPER(name) as upper_name2,
 
         ---------- numerics
         {{ cents_to_dollars('cost') }} as supply_cost,
